@@ -12,7 +12,6 @@ export default function CaffeMocha() {
     return (
         <ScrollView style={styles.container}>
 
-            {/* Header */}
             <View style={styles.header}>
                 <TouchableOpacity onPress={() => router.back()}>
                     <Text style={styles.back}>←</Text>
@@ -21,15 +20,12 @@ export default function CaffeMocha() {
                 <Text style={styles.heart}>♡</Text>
             </View>
 
-            {/* Image */}
             <Image source={require("../assets/mocha.png")} style={styles.img} />
 
-            {/* Info */}
             <View style={styles.inner}>
                 <Text style={styles.name}>Caffe Mocha</Text>
                 <Text style={styles.sub}>Ice/Hot</Text>
 
-                {/* Size choose */}
                 <Text style={styles.sectionTitle}>Size</Text>
                 <View style={styles.sizeRow}>
                     {["S", "M", "L"].map(s => (
@@ -39,7 +35,6 @@ export default function CaffeMocha() {
                     ))}
                 </View>
 
-                {/* Price + Buy */}
                 <View style={styles.footer}>
                     <View>
                         <Text style={styles.priceLabel}>Price</Text>

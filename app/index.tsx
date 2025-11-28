@@ -6,7 +6,6 @@ export default function HomeScreen() {
 
     return (
         <ScrollView style={styles.container}>
-            {/* top section */}
             <View style={styles.topSection}>
                 <Text style={styles.locationLabel}>Location</Text>
                 <Text style={styles.location}>Bilzen, Tanjungbalai ▼</Text>
@@ -18,10 +17,8 @@ export default function HomeScreen() {
                 />
             </View>
 
-            {/* Promo */}
             <Image source={require("../assets/promo.png")} style={styles.promoBanner} />
 
-            {/* Tabs */}
             <ScrollView horizontal style={styles.tabs} showsHorizontalScrollIndicator={false}>
                 <Text style={[styles.tab, styles.activeTab]}>All Coffee</Text>
                 <Text style={styles.tab}>Macchiato</Text>
@@ -29,10 +26,7 @@ export default function HomeScreen() {
                 <Text style={styles.tab}>Americano</Text>
             </ScrollView>
 
-            {/* Cards */}
             <View style={styles.cardContainer}>
-                {/* CARD 1 */}
-                {/* CARD 1 */}
                 <TouchableOpacity
                     style={styles.card}
                     onPress={() => router.push("/CaffeMocha")}
@@ -43,7 +37,6 @@ export default function HomeScreen() {
                     <Text style={styles.cardPrice}>$ 4.53</Text>
                 </TouchableOpacity>
 
-                {/* CARD 2 */}
                 <TouchableOpacity
                     style={styles.card}
                     onPress={() => router.push("/FlatWhite")}
